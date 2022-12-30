@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    color: #0E1111;
+}
+
+header{
+    background-color: #1F2833;
+    color: white;
+}
+
+header .container{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+
+.container{
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+header .title{
+    margin: 0;
+    display:flex;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+    transition: color 0.5s;
+    font-weight: bold;
+    color: rgb(41, 44, 71);
+}
+
+a:hover, a.active{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.title-container{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.title-container h3{
+    width: fit-content;
+    margin: auto;
+    color: black;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 20px;
+}
+
+.content div{
+    padding: 20px;
+}
+
+.image-container{
+    display: flex;
+    align-items: center;
+}
+
+.content div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content p{
+    text-align: justify;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    grid-gap: 20px;;
+}
+
+.article{
+    border-radius: 20px;
+    background-color: rgb(239, 236, 236);
+}
+
+.article-info{
+    padding: 20px;
+}
+
+.article-info h3{
+    margin-top: 0;
+    float:right;
+
+}
+.article-info h3 >a{
+    color: black;
+}
+.article img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+footer{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #1F2833;
+    color: white;
+}
+
+.form-container form{
+    padding: 10px;
+    margin: auto;
+}
+
+form{
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(239, 236, 236);
+    border-radius: 10px;
+}
+
+.input-container{
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-gap: 20px;
+    align-items: center;
+    margin: 15px 45px;
+}
+.input-container label{
+    text-align: right;
+}
+
+.input-container input, .input-container select, .input-container textarea{
+    padding: 10px;
+}
+
+.button-container{
+    text-align: center;
+}
+
+form button[type=submit]{
+    background-color: black;
+    padding: 10px 15px;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    color: white;
+}
+
+form button:hover{
+    background-color: rgb(144, 152, 152);
+}
+
+/* for small screens */
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+        margin: 0;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .input-container{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .input-container input, .input-container select, .input-container textarea{
+        padding: 7px;
+    }
+
+    .input-container label{
+        text-align: left;
+    }
+
+    .title-container h1{
+        font-size: 50px;
+    }
+
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .list{
+        grid-template-columns: 1fr;
+    }
+}
