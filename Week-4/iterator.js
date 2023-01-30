@@ -15,8 +15,7 @@ const Fib = (n) => ({
                 if(i > n){
                     return { done: true }
                 }
-                thisNum = nextNum;
-                nextNum = (thisNum + nextNum) || 1;
+          [thisNum, nextNum] = [nextNum, (thisNum + nextNum) || 1];
                 // [thisNum, nextNum] = [nextNum, (thisNum + nextNum) || 1];
                 return { value: thisNum, done: false }
             }
