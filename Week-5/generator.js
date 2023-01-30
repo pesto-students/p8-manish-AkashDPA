@@ -18,12 +18,7 @@ const doTask3 = (ms) => {
 };
 
 const usingAsync = async () => {
-    let task1 = await doTask1(3000);
-    console.log(task1);
-    let task2 = await doTask2(1000);
-    console.log(task2);
-    let task3 = await doTask3(2000);
-    console.log(task3);
+    Promise.all([doTask1(3000), doTask2(1000), doTask3(2000)]).then((response) => console.log(response));
 };
   
 function * usingGenerator() {
