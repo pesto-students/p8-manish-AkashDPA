@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.content{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red, .yellow, .blue, .green {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+.red {
+    background-color: red;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+}
+.yellow {
+    background-color: yellow;
+    top: 0;
+    right: 0;
+    transform-origin: top right;
+}
+.blue {
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom left;
+}
+.green {
+    background-color: green;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom right;
+}
+.squares-container:hover .red, .squares-container:hover .green {
+    transform: rotate(90deg);
+}
+.squares-container:hover .yellow, .squares-container:hover .blue {
+    transform: rotate(-90deg);
+}
