@@ -1,6 +1,11 @@
 
 # Weather API in NodeJs
 
+[Live preview at codesandbox](https://codesandbox.io/p/sandbox/weatherapi-kebzl4?file=%2FREADME.md)
+
+### Author
+Akash Pathade
+[![LinkedIn Profile](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/AkashDPA)
 
 ## API Reference
 
